@@ -1,0 +1,38 @@
+{
+  "name": "ricksonl.berigo/buscador-de-cursos",
+  "description": "Pacote onde iremos buscar cursos de PHP na plataforma da Alura",
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "Projeto\\BuscadorDeCursos\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "RicksonLBerigo",
+      "email": "ricksonl.berigo@outlook.com"
+    }
+  ],
+  "require-dev": {
+    "phan/phan": "^5.3",
+    "squizlabs/php_codesniffer": "^3.6"
+  },
+  "require": {
+    "guzzlehttp/guzzle": "^7.4",
+    "symfony/dom-crawler": "^6.0",
+    "symfony/css-selector": "^6.0"
+  },
+  "scripts": {
+    "cs": "phpcs --standard=PSR12 src\\",
+    "phan": "phan --allow-polyfill-parser",
+    "check": [
+      "@cs",
+      "@phan"
+    ]
+  },
+  "scripts-descriptions": {
+    "cs": "Mostra os erros do código com base dos métodos da PSR12",
+    "phan": "Mostra os erros no código",
+    "check": "Roda as verificações do código. PHAN, PHPCS"
+  }
+}
