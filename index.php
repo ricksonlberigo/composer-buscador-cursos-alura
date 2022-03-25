@@ -1,3 +1,4 @@
+#!/urs/bin/env php
 <?php
 
 use GuzzleHttp\Client;
@@ -13,5 +14,5 @@ $searchEngine = new SearchEngine($client, $crawler);
 $courses = $searchEngine->search('/cursos-online-programacao/php');
 
 foreach ($courses as $course) {
-  echo $course . PHP_EOL;
+    echo $course . PHP_EOL;
 }

@@ -34,5 +34,9 @@
     "cs": "Mostra os erros do código com base dos métodos da PSR12",
     "phan": "Mostra os erros no código",
     "check": "Roda as verificações do código. PHAN, PHPCS"
-  }
+  },
+  "license": "GPL-3.0",
+  "bin": [
+    "index.php"
+  ]
 }
